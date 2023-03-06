@@ -302,7 +302,19 @@ Mergesort is considered as stable sort.
 ![7f5a861f433485a660366e8c6fe3761](https://user-images.githubusercontent.com/54606160/223093026-737ce744-eb86-4c6c-a0d9-85b08f27138c.jpg)
 
 ## 4. Quicksort  
+```
+1. Choose the last element in the array as the pivot element.
+2. Initialize two pointers, i and j, at the beginning of the array.
+3. Move pointer i from left to right until an element larger than or equal to the pivot is found.
+4. Move pointer j from right to left until an element smaller than the pivot is found.
+5. If i is less than or equal to j, swap the elements at positions i and j, and increment i and decrement j.
+6. Repeat steps 3-5 until i is greater than j.
+7. Swap the pivot element (which is at the end of the array) with the element at position i.
+8. Recursively sort the sub-array to the left of i and the sub-array to the right of i.
+```
 **4.1 Show, in the style of the trace given with partition(), how that method partitions the array E A S Y Q U E S T I O N.**
+
+![23fa7874f3fc56373f92b775060d70e](https://user-images.githubusercontent.com/54606160/223111901-33559bb5-a5a5-489d-839c-a56282d04a28.jpg)
 
 **4.2 Show, in the style of the quicksort trace, how quicksort sorts the array E A S Y Q U E S T I O N. (For the purposes of this exercise, ignore the initial shuffle.)**
 
