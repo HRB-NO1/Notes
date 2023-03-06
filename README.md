@@ -289,25 +289,25 @@ Selection sorting takes more time because it will iterate through the unsorted a
 This situation will indicates that the cost of finding the smallest value is low. And the cost of moving large crates is high. So, selection sort will be a better choice because it only requires at most one swtich in each loop.
 
 ## 3. Mergesort  
-**Describe in words why mergesort is a stable sort.**
+**3.1 Describe in words why mergesort is a stable sort.**
 
 Stable sort: If the relative positions of two equal numbers before and after sorting remain unchanged, the algorithm is stable. eg: Insertion sort
 Unstable sorting: if the relative positions of two equal numbers before and after sorting change, the algorithm is unstable. eg: Selection sort
 Mergesort is considered as stable sort.
 
-**Give traces, in the style of the trace given in this section, showing how the keys E A S Y Q U E S T I O N  are sorted with top-down mergesort and with bottom-up mergesort.**
+**3.2 Give traces, in the style of the trace given in this section, showing how the keys E A S Y Q U E S T I O N  are sorted with top-down mergesort and with bottom-up mergesort.**
 >https://www.baeldung.com/cs/merge-sort-top-down-vs-bottom-up#:~:text=Top%2Ddown%20merge%20sort%20begins,returns%20the%20merged%20output%20array.
 
 ![c3b0cec9639971e9e6f71b4a579b198](https://user-images.githubusercontent.com/54606160/223093007-b0ad38e9-a1d5-4c1c-b33e-c9012cd535a6.jpg)
 ![7f5a861f433485a660366e8c6fe3761](https://user-images.githubusercontent.com/54606160/223093026-737ce744-eb86-4c6c-a0d9-85b08f27138c.jpg)
 
 ## 4. Quicksort  
-**Show, in the style of the trace given with partition(), how that method partitions the array E A S Y Q U E S T I O N.**
+**4.1 Show, in the style of the trace given with partition(), how that method partitions the array E A S Y Q U E S T I O N.**
 
-**Show, in the style of the quicksort trace, how quicksort sorts the array E A S Y Q U E S T I O N. (For the purposes of this exercise, ignore the initial shuffle.)**
+**4.2 Show, in the style of the quicksort trace, how quicksort sorts the array E A S Y Q U E S T I O N. (For the purposes of this exercise, ignore the initial shuffle.)**
 
-**About how many compares will Quick.sort() make when sorting an array of N items that are all equal?**
+**4.3 About how many compares will Quick.sort() make when sorting an array of N items that are all equal?**
 
-**Show, in the style of the trace given with the code, how the entropy-optimal sort first partitions the array B A B A B A B A C A D A B R A**
+**4.4 Show, in the style of the trace given with the code, how the entropy-optimal sort first partitions the array B A B A B A B A C A D A B R A**
 
-**Bad partitioning. How does not stop on equal keys make quicksort go quadratic when all keys are equal? Give an example of this input.**
+**4.5 Bad partitioning. How does not stop on equal keys make quicksort go quadratic when all keys are equal? Give an example of this input.**
