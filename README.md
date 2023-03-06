@@ -301,4 +301,13 @@ Mergesort is considered as stable sort.
 ![c3b0cec9639971e9e6f71b4a579b198](https://user-images.githubusercontent.com/54606160/223093007-b0ad38e9-a1d5-4c1c-b33e-c9012cd535a6.jpg)
 ![7f5a861f433485a660366e8c6fe3761](https://user-images.githubusercontent.com/54606160/223093026-737ce744-eb86-4c6c-a0d9-85b08f27138c.jpg)
 
+## 4. Quicksort  
+**Show, in the style of the trace given with partition(), how that method partitions the array E A S Y Q U E S T I O N.**
 
+**Show, in the style of the quicksort trace, how quicksort sorts the array E A S Y Q U E S T I O N. (For the purposes of this exercise, ignore the initial shuffle.)**
+
+**About how many compares will Quick.sort() make when sorting an array of N items that are all equal?**
+
+**Show, in the style of the trace given with the code, how the entropy-optimal sort first partitions the array B A B A B A B A C A D A B R A**
+
+**Bad partitioning. How does not stop on equal keys make quicksort go quadratic when all keys are equal? Give an example of this input.**
