@@ -295,4 +295,5 @@ Stable sort: If the relative positions of two equal numbers before and after sor
 Unstable sorting: if the relative positions of two equal numbers before and after sorting change, the algorithm is unstable. eg: Selection sort
 Mergesort is considered as stable sort.
 
-**Give traces, in the style of the trace given in this section, showing how the keys E A S Y Q U E S T I O N  are sorted with top-down mergesort and with bottom-up mergesort.**
+**Give traces, in the style of the trace given in this section, showing how the keys E A S Y Q U E S T I O N  are sorted with top-down mergesort and with bottom-up mergesort.**
+>https://www.baeldung.com/cs/merge-sort-top-down-vs-bottom-up#:~:text=Top%2Ddown%20merge%20sort%20begins,returns%20the%20merged%20output%20array.
