@@ -268,6 +268,7 @@ Time Lapsed =  87.81230282783508
 
 **2.1 What is the maximum number of exchanges involving any particular item during selection sort? E A S Y Q U E S T I O N**
 Worst case will be N-1. In this case 12 - 1 = 11
+![08843551063dfb25723f8d4323d27d0](https://user-images.githubusercontent.com/54606160/223071918-91e17293-6bf0-445b-af31-6d189a5d7647.jpg)
 
 **2.2Show in the style of the example trace with insertion sort, how insertion sort sorts the array E A S Y Q U E S T I O N**
 ![61f3b6a8369c6767930cae45d4a6be8](https://user-images.githubusercontent.com/54606160/223069527-fbae98ce-58b3-4033-b26d-a1624d901a51.jpg)
