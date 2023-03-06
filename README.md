@@ -288,4 +288,7 @@ Selection sorting takes more time because it will iterate through the unsorted a
 
 This situation will indicates that the cost of finding the smallest value is low. And the cost of moving large crates is high. So, selection sort will be a better choice because it only requires at most one swtich in each loop.
 
+## 3. Mergesort  
+**Describe in words why mergesort is a stable sort.**
 
+**Give traces, in the style of the trace given in this section, showing how the keys E A S Y Q U E S T I O N  are sorted with top-down mergesort and with bottom-up mergesort.**
