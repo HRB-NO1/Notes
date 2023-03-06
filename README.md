@@ -276,8 +276,10 @@ Worst case will be N-1. In this case 12 - 1 = 11
 
 
 **2.3Which method runs fastest for an array with all keys identical, selection sort or insertion sort?**
+Insertion sort runs faster, because it will take the first element of unsorted array and compare it with the sorted array once(compare only once with thelast element of sorted array).
+Selection sorting takes more time because it will iterate through the unsorted array once in each iteration to find the smallest element.
 
 **2.4Expensive exchange. A clerk at a shipping company is charged with the task of rearranging a number of large crates in order of the time they are to be shipped out. Thus, the cost of compares is very low (just look at the labels) relative to the cost of exchanges (move the crates). The warehouse is nearly full: there is extra space sufficient to hold any one of the crates, but not two. Which sorting method should the clerk use?**
-
+This situation will indicates that the cost of finding the smallest value is low. And the cost of moving large crates is high. So, selection sort will be a better choice because it only requires at most one swtich in each loop.
 
 
