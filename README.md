@@ -291,4 +291,8 @@ This situation will indicates that the cost of finding the smallest value is low
 ## 3. Mergesort  
 **Describe in words why mergesort is a stable sort.**
 
+Stable sort: If the relative positions of two equal numbers before and after sorting remain unchanged, the algorithm is stable. eg: Insertion sort
+Unstable sorting: if the relative positions of two equal numbers before and after sorting change, the algorithm is unstable. eg: Selection sort
+Mergesort is considered as stable sort.
+
 **Give traces, in the style of the trace given in this section, showing how the keys E A S Y Q U E S T I O N  are sorted with top-down mergesort and with bottom-up mergesort.**
