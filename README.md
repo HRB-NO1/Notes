@@ -252,7 +252,9 @@ Time Lapsed =  87.81230282783508
 ## Analysis: 
 **As the output, I can find that block a and block b tend to be O(n) which means the bigger the N is, the more time they will take, and it's a linear increase.** 
 **I can find that block c tend to be O(nLogn) which means the bigger the N is, the more time they will take, and it's not a linear increase.**
+
 ![](https://coderzpy.com/wp-content/uploads/2020/08/WcBRI.png)
+
 **Block a explanation:**
 
 
@@ -267,19 +269,23 @@ Time Lapsed =  87.81230282783508
 >https://www.youtube.com/watch?v=OGzPmgsI-pQ
 
 **2.1 What is the maximum number of exchanges involving any particular item during selection sort? E A S Y Q U E S T I O N**
+
 Worst case will be N-1. In this case 12 - 1 = 11
 
 ![08843551063dfb25723f8d4323d27d0](https://user-images.githubusercontent.com/54606160/223071918-91e17293-6bf0-445b-af31-6d189a5d7647.jpg)
 
 **2.2Show in the style of the example trace with insertion sort, how insertion sort sorts the array E A S Y Q U E S T I O N**
+
 ![61f3b6a8369c6767930cae45d4a6be8](https://user-images.githubusercontent.com/54606160/223069527-fbae98ce-58b3-4033-b26d-a1624d901a51.jpg)
 
 
 **2.3Which method runs fastest for an array with all keys identical, selection sort or insertion sort?**
+
 Insertion sort runs faster, because it will take the first element of unsorted array and compare it with the sorted array once(compare only once with thelast element of sorted array).
 Selection sorting takes more time because it will iterate through the unsorted array once in each iteration to find the smallest element.
 
 **2.4Expensive exchange. A clerk at a shipping company is charged with the task of rearranging a number of large crates in order of the time they are to be shipped out. Thus, the cost of compares is very low (just look at the labels) relative to the cost of exchanges (move the crates). The warehouse is nearly full: there is extra space sufficient to hold any one of the crates, but not two. Which sorting method should the clerk use?**
+
 This situation will indicates that the cost of finding the smallest value is low. And the cost of moving large crates is high. So, selection sort will be a better choice because it only requires at most one swtich in each loop.
 
 
