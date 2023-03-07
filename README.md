@@ -362,4 +362,20 @@ RRPOTYIIUQEU(E is left on heap)
 
 # All in Together #
 ![n2as7kxfhqkpglf3juj2](https://user-images.githubusercontent.com/54606160/223387032-dc0836b8-7d18-4cd6-be5d-587e872c7db8.png)
+H: Selection sort
+```
+def selection_sort(arr):
+    for i in range(len(arr)):
+        min_index = i
+        for j in range(i+1, len(arr)):
+            if arr[j] < arr[min_index]:
+                min_index = j
+                print(arr)
+        arr[i], arr[min_index] = arr[min_index], arr[i]
+    return arr
+
+arr = ["HELP", "IFYO", "UARE", "READ", "INGT", "HISI", "AMTR", "APPE", "DINS", "IDEA", "SORT", "INGA", "LGOR", "ITHM", "OHPL", "EASE", "SEND", "HELP", "RATS", "EVIL", "RATS", "SWAR", "MALL", "OVER", "THEP", "LCAE", "HELP", "RATS", "AREW", "WATC", "INGM", "ETYP"]
+sorted_arr = selection_sort(arr)
+print(sorted_arr)
+```
 
