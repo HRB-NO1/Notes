@@ -327,3 +327,16 @@ N*logN, in this situation, the array will be cut into two same size sub-array th
 **4.5 Bad partitioning. How does not stop on equal keys make quicksort go quadratic when all keys are equal? Give an example of this input.**
 
 Not stop on strategy will divide the array into 2 different sizes sub-array(often). When encounter the array with all equal key, it will divide the array into size of n-1 sub-array and size 1 array like this: [1,1,1,1] [1], leading to recursion depth of n and n comapres per recursion, which is n^2
+
+## 5. Heapsort  
+**4.1 Criticize the following idea: to implement find the maximum in constant time, why not keep track of the maximum value inserted so far, then return that value for find the maximum?**
+
+
+**4.2 Is an array that is sorted in decreasing order a max-oriented heap?**
+
+**4.3 Suppose that the sequence
+
+>P R I O * R * * I * T * Y * * * Q U E * * * U * E
+
+
+(where a letter means insert and an asterisk means remove the maximum) is inserted to an initially empty max heap. Give the sequence of values returned by del_max operations.**
