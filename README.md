@@ -331,8 +331,26 @@ Not stop on strategy will divide the array into 2 different sizes sub-array(ofte
 ## 5. Heapsort  
 **4.1 Criticize the following idea: to implement find the maximum in constant time, why not keep track of the maximum value inserted so far, then return that value for find the maximum?**
 
+For example, there is a such unsorted array[3,2,1,4,5]
+If track the maxium value of the recorded max number:
+insert 3, max = 3
+insert 2, max = 3
+insert 1, max = 3
+insert 4, max = 4
+insert 5, max = 5
+result = [3,3,3,4,5]
+If seen 3 as the max value in the array, this will not creat a sorted array, but only get the max value of inputted array.
+Thus this is not a contruction of a heapsort.
 
 **4.2 Is an array that is sorted in decreasing order a max-oriented heap?**
+
+Yes,  [9, 7, 5, 3, 1]
+       9
+     /   \
+    7     5
+   / \
+  3   1
+
 
 **4.3 Suppose that the sequence (where a letter means insert and an asterisk means remove the maximum) is inserted to an initially empty max heap. Give the sequence of values returned by del_max operations.**
 
