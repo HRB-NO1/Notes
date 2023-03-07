@@ -361,8 +361,10 @@ RRPOTYIIUQEU(E is left on heap)
 
 
 # All in Together #
+
 ![n2as7kxfhqkpglf3juj2](https://user-images.githubusercontent.com/54606160/223387032-dc0836b8-7d18-4cd6-be5d-587e872c7db8.png)
-H: Selection sort
+
+***H: Selection sort. Sort stop at IDEA, LGOR.***
 ```
 def selection_sort(arr):
     for i in range(len(arr)):
@@ -378,4 +380,84 @@ arr = ["HELP", "IFYO", "UARE", "READ", "INGT", "HISI", "AMTR", "APPE", "DINS", "
 sorted_arr = selection_sort(arr)
 print(sorted_arr)
 ```
+***E: Shell sort.
+```
+def shellSort(arr):
+    n = len(arr)
+
+    # Define the gap sequence
+    gap_seq = [13, 4, 1]
+
+    # Iterate over gap sizes
+    for gap in gap_seq:
+        # Iterate over the elements within each gap
+        for i in range(gap, n):
+            temp = arr[i]
+            j = i
+
+            # Shift the elements within the gap until the correct position is found
+            while j >= gap and arr[j - gap] > temp:
+                arr[j] = arr[j - gap]
+                j -= gap
+
+            arr[j] = temp
+            print("Iteration result:", arr)
+
+    return arr
+
+arr = ["HELP", "IFYO", "UARE", "READ", "INGT", "HISI", "AMTR", "APPE", "DINS", "IDEA", "SORT", "INGA", "LGOR", "ITHM", "OHPL", "EASE", "SEND", "HELP", "RATS", "EVIL", "RATS", "SWAR", "MALL", "OVER", "THEP", "LCAE", "HELP", "RATS", "AREW", "WATC", "INGM", "ETYP"]
+
+sorted_arr = shellSort(arr)
+print("Final sorted array is:", sorted_arr)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
