@@ -380,7 +380,7 @@ arr = ["HELP", "IFYO", "UARE", "READ", "INGT", "HISI", "AMTR", "APPE", "DINS", "
 sorted_arr = selection_sort(arr)
 print(sorted_arr)
 ```
-***E: Shell sort.
+***E: Shell sort.***
 ```
 def shellSort(arr):
     n = len(arr)
