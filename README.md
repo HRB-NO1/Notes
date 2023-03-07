@@ -345,12 +345,13 @@ Thus this is not a contruction of a heapsort.
 **4.2 Is an array that is sorted in decreasing order a max-oriented heap?**
 
 Yes,  [9, 7, 5, 3, 1]
+```
        9
      /   \
     7     5
    / \
   3   1
-
+```
 
 **4.3 Suppose that the sequence (where a letter means insert and an asterisk means remove the maximum) is inserted to an initially empty max heap. Give the sequence of values returned by del_max operations.**
 
