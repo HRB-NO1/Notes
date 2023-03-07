@@ -334,9 +334,7 @@ Not stop on strategy will divide the array into 2 different sizes sub-array(ofte
 
 **4.2 Is an array that is sorted in decreasing order a max-oriented heap?**
 
-**4.3 Suppose that the sequence
+**4.3 Suppose that the sequence (where a letter means insert and an asterisk means remove the maximum) is inserted to an initially empty max heap. Give the sequence of values returned by del_max operations.**
 
 >P R I O * R * * I * T * Y * * * Q U E * * * U * E
 
-
-(where a letter means insert and an asterisk means remove the maximum) is inserted to an initially empty max heap. Give the sequence of values returned by del_max operations.**
