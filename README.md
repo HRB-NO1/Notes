@@ -320,6 +320,10 @@ Mergesort is considered as stable sort.
 
 **4.3 About how many compares will Quick.sort() make when sorting an array of N items that are all equal?**
 
+N*logN, in this situation, the array will be cut into two same size sub-array that is logN. And each iteration make n compares
+
 **4.4 Show, in the style of the trace given with the code, how the entropy-optimal sort first partitions the array B A B A B A B A C A D A B R A**
 
 **4.5 Bad partitioning. How does not stop on equal keys make quicksort go quadratic when all keys are equal? Give an example of this input.**
+
+Not stop on strategy will divide the array into 2 different sizes sub-array(often). When encounter the array with all equal key, it will divide the array into size of n-1 sub-array and size 1 array like this: [1,1,1,1] [1], leading to recursion depth of n and n comapres per recursion, which is n^2
