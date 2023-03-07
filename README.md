@@ -358,3 +358,8 @@ Yes,  [9, 7, 5, 3, 1]
 >P R I O * R * * I * T * Y * * * Q U E * * * U * E
 
 RRPOTYIIUQEU(E is left on heap)
+
+
+# All in Together #
+![n2as7kxfhqkpglf3juj2](https://user-images.githubusercontent.com/54606160/223387032-dc0836b8-7d18-4cd6-be5d-587e872c7db8.png)
+
