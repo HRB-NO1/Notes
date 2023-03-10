@@ -362,7 +362,7 @@ RRPOTYIIUQEU(E is left on heap)
 
 # All in Together #
 
-![a21d0d7d46c1d0c98703f73be159368](https://user-images.githubusercontent.com/54606160/223496217-15196367-db01-4c28-bff5-793a7142aa23.png)
+![image](https://user-images.githubusercontent.com/54606160/223825427-a4519374-7c9b-411f-ab54-c9e18902c17b.png)
 
 ***B: Mergesort(bottom-up). In ['AMTR','UARE'], length is 16, sorted. In ['EVIL', 'SWAR'], length is 8, sorted. In ['AREW', 'WATC'], length is 8, sorted. It satisfied mergesort, because bottom-up sort's array will be divided into subarrays of increasing size, and adjacent subarrays will be merged together in sorted order. Top half part was merged to size 16, bottom part have not merged yet, still kept 8 + 8 size.
 
@@ -374,52 +374,3 @@ RRPOTYIIUQEU(E is left on heap)
 
 
 ***H: Selection sort. Sorted part stops at IDEA, and all elements was sorted before IDEA, all elements after IDEA is unsorted. Needed to point that all of the strings after IDEA is equal or bigger than IDEA. This will imply that the elements picked was in an order[A-Z]. Thus [A-I] elements was picked, there will be no elements smaller than IDEA. The string after IDEA is not sorted but still bigger than IDEA. This satisfie Selection sort pattern.***
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
