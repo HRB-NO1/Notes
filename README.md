@@ -362,9 +362,15 @@ RRPOTYIIUQEU(E is left on heap)
 
 # All in Together #
 
-![97b410a6ae4887cf0b4df8017f64889](https://user-images.githubusercontent.com/54606160/224246239-c244e841-e814-438b-91fd-2609eab1882c.png)
+![image](https://user-images.githubusercontent.com/54606160/224256749-41966b97-d3d4-40e7-b9f2-783e32eb5f58.png)
 
-***B: Mergesort(bottom-up). In ['AMTR','UARE'], length is 16, sorted. In ['EVIL', 'SWAR'], length is 8, sorted. In ['AREW', 'WATC'], length is 8, sorted. It satisfied mergesort, because bottom-up sort's array will be divided into subarrays of increasing size, and adjacent subarrays will be merged together in sorted order. Top half part was merged to size 16, bottom part have not merged yet, still kept 8 + 8 size.***
+***B: Mergesort(top-down) Sorted as 16+8+8, because top-down is recursively implemented. The sub-array can have different size, because it's still in the intermediate step***
+
+
+***C: Quicksort(standard). ['HELP'] is the pivot. All elements before ['HELP'] is smaller or equal than ['HELP']. All elements after ['HELP'] is bigger than ['HELP']. Futhermore, the sub-array is not sorted yet***
+
+
+***D: Mergesort(bottom-up) Sorted as 4+4+4+4+4+4+4+4. All sub-array are equal, satisfied bottom-up algr.***
 
 
 ***E: Shell sort. I found E is in 4 gap process. I found this because each 4 gaps elements have a ascending[A-Z] order***
@@ -372,6 +378,9 @@ RRPOTYIIUQEU(E is left on heap)
 
 
 ***F: Insertion sort. The characterise of Insertion sort is iteratively picking element in order in the unsorted array and insert into its correct position in the sorted array. I found the sorted array stopped at UARE. There is no change after UARE compare to original array , so it tells that the elements was picked in order which satisfied Insertion sort's pattern***
+
+
+***G: Heapsort. First element 'WATC' is the biggest element, meaning this array is making a max-heap***
 
 
 ***H: Selection sort. Sorted part stops at IDEA, and all elements was sorted before IDEA, all elements after IDEA is unsorted. Needed to point that all of the strings after IDEA is equal or bigger than IDEA. This will imply that the elements picked was in an order[A-Z]. Thus [A-I] elements was picked, there will be no elements smaller than IDEA. The string after IDEA is not sorted but still bigger than IDEA. This satisfie Selection sort pattern.***
