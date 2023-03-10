@@ -318,18 +318,23 @@ Mergesort is considered as stable sort.
 
 **4.2 Show, in the style of the quicksort trace, how quicksort sorts the array E A S Y Q U E S T I O N. (For the purposes of this exercise, ignore the initial shuffle.)**
 
-**4.3 About how many compares will Quick.sort() make when sorting an array of N items that are all equal?**
+![5ceadf593d420e5b1144d6528a7931b](https://user-images.githubusercontent.com/54606160/224321264-e64fb3e6-8498-49f7-ac33-c907336c0771.jpg)
+![6c7e1a1b0a56f2b8120be27b2f3ca78](https://user-images.githubusercontent.com/54606160/224321284-242fd3e1-f076-4b82-85c2-3867b2d28bd5.jpg)
+
+**4.3 About how many compares will Quick.sort() make when sorting an array of N items that are all equal?**
 
 N*logN, in this situation, the array will be cut into two same size sub-array that is logN. And each iteration make n compares
 
 **4.4 Show, in the style of the trace given with the code, how the entropy-optimal sort first partitions the array B A B A B A B A C A D A B R A**
 
-**4.5 Bad partitioning. How does not stop on equal keys make quicksort go quadratic when all keys are equal? Give an example of this input.**
+![9d989334045fdb7eaae61e9f6740363](https://user-images.githubusercontent.com/54606160/224325000-0f5549c3-6335-4cb4-abeb-9c853a1bc17f.jpg)
+
+**4.5 Bad partitioning. How does not stop on equal keys make quicksort go quadratic when all keys are equal? Give an example of this input.**
 
 Not stop on strategy will divide the array into 2 different sizes sub-array(often). When encounter the array with all equal key, it will divide the array into size of n-1 sub-array and size 1 array like this: [1,1,1,1] [1], leading to recursion depth of n and n comapres per recursion, which is n^2
 
 ## 5. Heapsort  
-**4.1 Criticize the following idea: to implement find the maximum in constant time, why not keep track of the maximum value inserted so far, then return that value for find the maximum?**
+**5.1 Criticize the following idea: to implement find the maximum in constant time, why not keep track of the maximum value inserted so far, then return that value for find the maximum?**
 
 For example, there is a such unsorted array[3,2,1,4,5]
 If track the maxium value of the recorded max number:
@@ -342,7 +347,7 @@ result = [3,3,3,4,5]
 If seen 3 as the max value in the array, this will not creat a sorted array, but only get the max value of inputted array.
 Thus this is not a contruction of a heapsort.
 
-**4.2 Is an array that is sorted in decreasing order a max-oriented heap?**
+**5.2 Is an array that is sorted in decreasing order a max-oriented heap?**
 
 Yes,  [9, 7, 5, 3, 1]
 ```
@@ -353,7 +358,7 @@ Yes,  [9, 7, 5, 3, 1]
   3   1
 ```
 
-**4.3 Suppose that the sequence (where a letter means insert and an asterisk means remove the maximum) is inserted to an initially empty max heap. Give the sequence of values returned by del_max operations.**
+**5.3 Suppose that the sequence (where a letter means insert and an asterisk means remove the maximum) is inserted to an initially empty max heap. Give the sequence of values returned by del_max operations.**
 
 >P R I O * R * * I * T * Y * * * Q U E * * * U * E
 
