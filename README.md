@@ -362,7 +362,7 @@ RRPOTYIIUQEU(E is left on heap)
 
 # All in Together #
 
-![image](https://user-images.githubusercontent.com/54606160/223825427-a4519374-7c9b-411f-ab54-c9e18902c17b.png)
+![97b410a6ae4887cf0b4df8017f64889](https://user-images.githubusercontent.com/54606160/224246239-c244e841-e814-438b-91fd-2609eab1882c.png)
 
 ***B: Mergesort(bottom-up). In ['AMTR','UARE'], length is 16, sorted. In ['EVIL', 'SWAR'], length is 8, sorted. In ['AREW', 'WATC'], length is 8, sorted. It satisfied mergesort, because bottom-up sort's array will be divided into subarrays of increasing size, and adjacent subarrays will be merged together in sorted order. Top half part was merged to size 16, bottom part have not merged yet, still kept 8 + 8 size.***
 
