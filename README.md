@@ -49,16 +49,6 @@ def block_a(N):
         n = n // 2
 ​
 ​
-"""
-In block a, there is a nested loop(while, for),
-the inner loop repeats n times, and the outer loop repeats log2(n) times.
-n * (1 + 1/2 + 1/4 + 1/8 + ... + 1/n)
-= n * 2
-= 2n
-So the time complexity is O(n)
-"""
-​
-​
 # Block (b)
 def block_b(N):
     sum = 0
@@ -69,11 +59,6 @@ def block_b(N):
         i = i * 2
 ​
 ​
-"""
-​
-"""
-​
-​
 # Block (c)
 def block_c(N):
     sum = 0
@@ -82,13 +67,6 @@ def block_c(N):
         for j in range(0, N):
             sum += 1
         i = i * 2
-​
-​
-"""
-In block c, there is a nested loop(while, for),
-the inner loop repeats n times, and the outer loop repeats log2(n) times.
-n * log2(n)
-"""
 ​
 ​
 def calculate_time(N, block_number):
@@ -250,13 +228,11 @@ N =  52428800
 Time Lapsed =  87.81230282783508
 ```
 ## Analysis: 
-**As the output, I can find that block a and block b tend to be O(n) which means the bigger the N is, the more time they will take, and it's a linear increase.** 
-**I can find that block c tend to be O(nLogn) which means the bigger the N is, the more time they will take, and it's not a linear increase.**
-
 ![](https://coderzpy.com/wp-content/uploads/2020/08/WcBRI.png)
 
-**Block a explanation:**
-
+**Block (a) explanation: Inner loop: n/2 + n/4 + n/8 + ... + 2 + 1 = 2n-1. Outer loop: Log(n). Total = 2n-1+Log(n) = n. Thus O(n)**
+**Block (b) explanation: Inner loop: 1 + 2 + 4 + 8 + 16 + ... + N/2(or a bigger number smaller than N) ≈ n. Outer loop: Log(n). Total = n+Log(n) = n. Thus O(n)**
+**Block (c) explanation: Inner loop repeats constant N times in each iteration. Outer loop iterate Log(n) times. Total = N*Log(N) = O(nlogn)
 
 
 ## 2.Selection/Insertion Sort
