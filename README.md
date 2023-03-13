@@ -230,9 +230,9 @@ Time Lapsed =  87.81230282783508
 ## Analysis: 
 ![](https://coderzpy.com/wp-content/uploads/2020/08/WcBRI.png)
 
-**Block (a) explanation: Inner loop: n/2 + n/4 + n/8 + ... + 2 + 1 = 2^n-1. Outer loop: Log(n). Total = 2^n-1+Log(n) = 2^n. Thus O(2^n)**
+**Block (a) explanation: Inner loop: n/2 + n/4 + n/8 + ... + 2 + 1 = 2n-1. Outer loop: Log(n). Total = 2n-1+Log(n) = n. Thus O(n)**
 
-**Block (b) explanation: Inner loop: 1 + 2 + 4 + 8 + 16 + ... + N/2(or a bigger number smaller than N) = 2^n-1. Outer loop: Log(n). Total = 2^n-1+Log(n) = 2^n. Thus O(2^n)**
+**Block (b) explanation: Inner loop: 1 + 2 + 4 + 8 + 16 + ... + N/2(or a bigger number smaller than N) = 2n-1. Outer loop: Log(n). Total = 2n-1+Log(n) = n. Thus O(n)**
 
 **Block (c) explanation: Inner loop repeats constant N times in each iteration. Outer loop iterate Log(n) times. Total = N*Log(N) = O(nlogn)**
 
