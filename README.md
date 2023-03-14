@@ -283,27 +283,34 @@ Mergesort is considered as stable sort.
 
 ## 4. Quicksort  
 ```
-1. Choose the last element in the array as the pivot element.
-2. Initialize two pointers, i and j, at the beginning of the array.
-3. Move pointer i from left to right until an element larger than or equal to the pivot is found.
-4. Move pointer j from right to left until an element smaller than the pivot is found.
+1. Choose the first element in the array as the pivot element.
+2. Initialize two pointers, i and j. Set i to the second element (1 index) and j to the last element of the array.
+3. Move pointer i from left to right until an element greater than the pivot is found.
+4. Move pointer j from right to left until an element less than or equal to the pivot is found.
 5. If i is less than or equal to j, swap the elements at positions i and j, and increment i and decrement j.
 6. Repeat steps 3-5 until i is greater than j.
-7. Swap the pivot element (which is at the end of the array) with the element at position i.
-8. Recursively sort the sub-array to the left of i and the sub-array to the right of i.
+7. Swap the pivot element (which is at the beginning of the array) with the element at position j.
+8. recursively sort the sub-array to the left of j and the sub-array to the right of j.
+
+When array size is 2:
+1. Choose the first element as the pivot.
+2. Compare the pivot with the second element.
+3. If the pivot is greater than the second element, swap the two elements. If the pivot is less than or equal to the second element, no action is needed.
+4. Since the sub-array has only two elements and is now sorted, the recursion stops, and the algorithm moves on to other parts of the array.
 ```
 **4.1 Show, in the style of the trace given with partition(), how that method partitions the array E A S Y Q U E S T I O N.**
 
-![23fa7874f3fc56373f92b775060d70e](https://user-images.githubusercontent.com/54606160/223111901-33559bb5-a5a5-489d-839c-a56282d04a28.jpg)
+![image](https://user-images.githubusercontent.com/54606160/225136778-456f680b-235c-4b23-99e1-fefe26c28b0d.png)
 
 **4.2 Show, in the style of the quicksort trace, how quicksort sorts the array E A S Y Q U E S T I O N. (For the purposes of this exercise, ignore the initial shuffle.)**
 
-![5ceadf593d420e5b1144d6528a7931b](https://user-images.githubusercontent.com/54606160/224321264-e64fb3e6-8498-49f7-ac33-c907336c0771.jpg)
-![6c7e1a1b0a56f2b8120be27b2f3ca78](https://user-images.githubusercontent.com/54606160/224321284-242fd3e1-f076-4b82-85c2-3867b2d28bd5.jpg)
+![image](https://user-images.githubusercontent.com/54606160/225144627-0a49ecf3-cfac-4c09-a2ec-44a6efabc1ca.png)
 
 **4.3 About how many compares will Quick.sort() make when sorting an array of N items that are all equal?**
 
-N*logN, in this situation, the array will be cut into two same size sub-array that is logN. And each iteration make n compares
+if (<, >=) and first or last element as pivot, O(n^2)
+if (<, >=) and median as pivot, O(n) < comparisons < O(nlogn)
+if (<, =, >), O(n)
 
 **4.4 Show, in the style of the trace given with the code, how the entropy-optimal sort first partitions the array B A B A B A B A C A D A B R A**
 
