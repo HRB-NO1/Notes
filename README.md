@@ -245,6 +245,8 @@ Time Lapsed =  87.81230282783508
 
 >Insertion sort: Read from the beginning of unsorted array, insert the element to the correct position.
 >https://www.youtube.com/watch?v=OGzPmgsI-pQ
+![051a0139807912ad4ba64516d2f3d94](https://user-images.githubusercontent.com/54606160/225119514-30b63cfe-05eb-4984-8123-8418ac95b783.jpg)
+
 
 **2.1 What is the maximum number of exchanges involving any particular item during selection sort? E A S Y Q U E S T I O N**
 
