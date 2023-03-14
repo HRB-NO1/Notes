@@ -314,7 +314,12 @@ if (<, =, >), O(n)
 
 **4.4 Show, in the style of the trace given with the code, how the entropy-optimal sort first partitions the array B A B A B A B A C A D A B R A**
 
-![9d989334045fdb7eaae61e9f6740363](https://user-images.githubusercontent.com/54606160/224325000-0f5549c3-6335-4cb4-abeb-9c853a1bc17f.jpg)
+A: 8
+B: 5
+C: 1
+D: 1
+R: 1
+[b, b, b, b, c, d, b, r] | a | a | a | a | a | a | a | a
 
 **4.5 Bad partitioning. How does not stop on equal keys make quicksort go quadratic when all keys are equal? Give an example of this input.**
 
