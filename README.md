@@ -314,12 +314,28 @@ if (<, =, >), O(n)
 
 **4.4 Show, in the style of the trace given with the code, how the entropy-optimal sort first partitions the array B A B A B A B A C A D A B R A**
 
-A: 8
-B: 5
-C: 1
-D: 1
-R: 1
-[b, b, b, b, c, d, b, r] | a | a | a | a | a | a | a | a
+```
+1. Choose the first element as the pivot (B).
+2. Initialize three pointers: lt (less than), gt (greater than), and i (index). Set lt and i to the second element, and gt to the last element.
+3. Process the array from left to right with the i pointer:
+4. If a[i] is less than the pivot (B), swap a[lt] and a[i], increment lt and i.
+5. If a[i] is equal to the pivot (B), just increment i.
+6. If a[i] is greater than the pivot (B), swap a[i] and a[gt], and decrement gt (do not increment i in this case, as we need to examine the swapped element).
+
+Initial array: B A B A B A B A C A D A B R A (pivot: B, lt: 1, i: 1, gt: 14)
+
+A B B A B A B A C A D A B R A B (lt: 1, i: 2, gt: 14)
+A A B B A B A B C A D A B R A B (lt: 2, i: 3, gt: 14)
+A A B B B B A B C A D A B R A B (lt: 2, i: 6, gt: 14)
+A A B B B B B B C A D A B R A B (lt: 2, i: 8, gt: 14)
+A A B B B B B B B B C A D A B R A (lt: 2, i: 10, gt: 14)
+A A B B B B B B B B B B C A D A R A (lt: 2, i: 12, gt: 14)
+A A B B B B B B B B B B B B C D A R A (lt: 2, i: 13, gt: 13)
+
+Less than pivot (B): A A
+Equal to pivot (B): B B B B B B B B B B B B B B
+Greater than pivot (B): C D A R A
+```
 
 **4.5 Bad partitioning. How does not stop on equal keys make quicksort go quadratic when all keys are equal? Give an example of this input.**
 
